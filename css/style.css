@@ -38,6 +38,10 @@ h6 {
     font-family: var(--headingFont);
     color: var(--colorBlack);
 }
+h2{
+    font-size: 48px;
+    font-weight: 600;
+}
 
 p,
 span {
@@ -166,7 +170,7 @@ button {
 
 .logo {
     background: red;
-    width: 275px;
+    width: 251px;
     height: 130px;
     display: flex;
     align-items: center;
@@ -364,7 +368,7 @@ button {
     color: #E4E7E9;
 }
 .header-location {
-    padding: 50px 40px;
+    padding: 41px 40px;
 }
 /* ===============================
     MENU END
@@ -485,7 +489,6 @@ button {
 .service-box {
     position: relative;
     overflow: hidden;
-    margin-right: 12px;
 }
 .service-card {}
 .service-icon {}
@@ -505,7 +508,7 @@ button {
 .service-title {}
 .service-title a {
     color: var(--colorBlack);
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
     padding: 0px 26px;
     transition: all linear .3s;
@@ -708,21 +711,22 @@ button {
     padding: 0 20px;
     position: relative;
 }
+.about-small-image {
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: -18%;
+    animation: about-small-image-animi-1linear 5s infinite alternate;
+    -webkit-animation:about-small-image-animi-1 linear 5s infinite alternate;
+}
 .about-small-image img {
     width: 220px;
     height: 285px;
     display: flex;
     object-fit: cover;
-    display: block;
-    position: absolute;
-    content: "";
-    top: 40%;
-    left: -18%;
-    animation: img-animi-1 linear 5s infinite alternate;
-    -webkit-animation: img-animi-1  linear 5s infinite alternate;
 }
 
-@keyframes img-animi-1  {
+@keyframes about-small-image-animi-1  {
     0% {
         transform: translateY(10px);
     }
@@ -937,7 +941,6 @@ button {
 }
 .advisor-item {
     position: relative;
-    margin-right: 30px;
 }
 .advisor-image img {
     width: 100%;
@@ -1110,12 +1113,11 @@ button {
 .project-button a:hover i:after {
     background: var(--colorPrimary);
 }
-.project-item {
+ .project-item {
     position: relative;
     transition: all linear .5s;
-    padding-right: 30px;
     padding-bottom: 25px;
-}
+} 
 
 
 .project-image img {
@@ -1258,7 +1260,7 @@ button {
 }
 .project-category ul li a:hover {
     color: var(--colorBlack);
-}
+} 
 
 /* =========================
         Project End
@@ -1531,4 +1533,1150 @@ button {
 
 /* =========================
         Blog End
+========================== */
+/* =========================
+        Footer Start
+========================== */
+.footer-area {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.footer-menu-area {
+    border-bottom: 1px solid #252222ed;
+}
+.footer-menu {
+}
+.footer-menu ul {}
+.footer-menu ul li {}
+.footer-menu ul li a {
+    padding: 25px 60px 25px 60px;
+    border-right: 1px solid #252222ed;
+    color: var(--colorPrimary);
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all linear .3s;
+}
+.footer-menu ul li:first-child a {
+    border-left: 1px solid #252222ed;
+}
+.footer-menu ul li a:hover {
+    color: red;
+}
+.footer-padding {
+    padding: 80px 0;
+}
+.footer-logo-image {
+    margin-bottom: 30px;
+}
+.footer-logo-image img {
+    object-fit: cover;
+    width: 100%;
+}
+.footer-social-area p {
+    width: 400px;
+    margin-bottom: 30px;
+    color: #74787C;;
+}
+.footer-social-link {}
+.footer-social-link ul {
+    gap:20px ;
+}
+.footer-social-link ul li {}
+.footer-social-link ul li a {
+    background: var(--paraColor);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--colorPrimary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+}
+.footer-social-link ul li:hover a {
+    background: red;
+}
+.footer-title-content {}
+.footer-title-content h3 {
+    color: var(--colorPrimary);
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.footer-title-content ul {
+
+}
+.footer-title-content ul li {
+    margin-bottom: 10px;
+}
+.footer-title-content ul li a {
+    color: #74787C;
+    transition: all linear .3s;
+}
+.footer-title-content ul li:hover a {
+    color: red;
+}
+.footer-title-content ul li a i {
+    margin-right: 10px;
+}
+.footer-title-subscribe {}
+.footer-title-subscribe h3 {
+    color: var(--colorPrimary);
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+.footer-title-subscribe p {
+    width: 300px;
+    margin-bottom: 30px;
+    color: #74787C;;
+}
+.footer-title-subscribe  form input {
+    margin: 0;
+    border: 1px solid var(--colorBlack);
+    background: transparent;
+    color: var(--colorPrimary);
+    width: 90%;
+    padding: 14px 25px;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.footer-button {
+    padding: 15px 20px 15px 20px;
+    text-transform: uppercase;
+    background: red;
+    color:var(--colorPrimary);
+    border: 1px solid red;
+    position: relative;
+    z-index: 1;
+    transition: all linear .3s;
+    overflow: hidden;
+}
+.footer-button:hover {
+    color: red;
+}
+.footer-button::after {
+    position: absolute;
+    content: "";
+    background:var(--colorPrimary);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    z-index: -1;
+    transition: all linear .3s;
+} 
+.footer-button:hover:after {
+    right: 0;
+}
+.footer-copyright {
+    text-align: center;
+    border-top:  1px solid #252222ed;
+    text-align: center;
+}
+.footer-copyright-text {
+    padding: 20px;
+}
+.footer-copyright-text a {
+    color: #74787C;
+    transition: all linear .3s;
+}
+.footer-copyright-text a:hover {
+    color: red;
+}
+/* =========================
+        Footer End
+========================== */
+
+/* =========================
+     Home2 Top Menu Start
+========================== */
+.header-top.home-two-top-menu {
+    border-bottom: none;
+    background: #000;
+}
+
+.header-top.home-two-top-menu .header-top-left ul {}
+
+.header-top.home-two-top-menu .header-top-left ul li {
+}
+.header-top.home-two-top-menu .header-top-left ul li span {
+    color: var(--colorPrimary);
+}
+.header-top.home-two-top-menu .header-top-left ul li i {
+    color: var(--colorPrimary);
+}
+.header-top.home-two-top-menu .header-top-left ul li a {
+    color: var(--colorPrimary);
+    transition: all linear .3s;
+}
+.header-top.home-two-top-menu .header-top-left ul li a:hover {
+    color: red;
+}
+.header-top.home-two-top-menu .header-top-left ul .border-right::after {
+    background: var(--colorPrimary);
+}
+.header-top.home-two-top-menu .header_top_right ul li span,.header-top.home-two-top-menu .header_top_right ul li a {
+    color: var(--colorPrimary);
+}
+.header-top.home-two-top-menu .header_top_right ul li a:hover {
+    color: red;
+}
+/* =========================
+     Home2 Top Menu End
+========================== */
+/* =========================
+       Home2 HEADER START
+========================== */
+.header-menu-area {}
+.brands_logo {
+    align-items: center;
+}
+.side-box-icon {
+    width: 142px;
+    height: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid red;
+}
+.side-box-icon a {
+    color: var(--colorBlack);
+    font-size: 24px;
+}
+.brands_logo .barnds {
+    margin-left: 50px;
+}
+.brands_logo .barnds img {
+    object-fit: cover;
+    width: 100%;
+}
+.heder-main-menu-area .main-menu ul li a {
+    padding: 45px 0;
+}
+.heder-main-menu-area .right_menu {}
+.right_menu .cart {
+    padding: 45px 35px;
+    position: relative;
+    transition: all linear .3s;
+}
+.heder-main-menu-area .right_menu .cart a {
+    display: inline-block;
+    color: var(--colorBlack);
+    position: relative;
+}
+.heder-main-menu-area .right_menu .cart a span {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    background: red;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    color: var(--colorPrimary);
+}
+.product-list {
+    width: 400px;
+    background: #fff ;
+    padding: 30px;
+    position: absolute;
+    content: "";
+    top: 200%;
+    left: -150px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .3s;
+    z-index: 999;
+}
+.right_menu .cart:hover .product-list {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.product-image {
+    gap: 20px;
+    padding: 10px;
+}
+
+.product-image li a {
+}
+.product-image-text li a {
+    color: red!important;
+    font-weight: 700;
+    transition: all linear .3s;
+}
+.product-image-text li a:hover {
+    color: var(--colorBlack)!important;
+}
+.product-image li . li span {}
+.product-image li a img {
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+.product-price {
+    justify-content: space-between;
+    padding: 25px ;
+    border-top: 1px solid #d4d4d4;
+    margin-top: 20px;
+}
+.product-btn {
+    padding: 0px 35px 0px 25px;
+    justify-content: space-between;
+}
+.product-btn a {
+    padding: 10px 25px;
+    background: red;
+    color: var(--colorPrimary)!important;
+    transition: all linear .3s;
+}
+.product-btn a:hover {
+    background: var(--colorBlack)!important;
+}
+.right_menu .search {
+    padding: 45px 35px;
+    background: #f6f6f6;
+}
+.right_menu .search a {
+    color: var(--colorBlack);
+}
+.right_menu .search a i {}
+.right_menu .vektor_btn .get-btn {
+    padding: 49px 99px 47px 99px;
+    background: red;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    color: var(--colorPrimary);
+    transition: all 0.3s;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+}
+.right_menu .vektor_btn .get-btn:hover {
+    color: var(--colorBlack);
+}
+/* =========================
+       Home2 HEADER End 
+========================== */
+/* =========================
+       Home2 Banner Start 
+========================== */
+.home2-hero-area {
+   position: relative;
+}
+.home2-heading {
+    padding: 155px 0 200px 0;
+}
+.home2-text h5 {
+    text-transform: uppercase;
+    color: red;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.home2-text h1 {
+    font-size:72px ;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.home2-text p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.home2-btn {
+    gap: 30px;
+}
+.project-button.home2 {
+    margin-top: 0!important;
+    
+}
+.socials-links {
+  position: absolute;
+  content: "";
+  bottom: 50%;
+  transform: rotate(90deg);
+  left: -70px;
+
+}
+.socials-links ul {
+    gap: 40px;
+}
+.socials-links ul .ulta {
+    transform: rotate(180deg); 
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.socials-links ul li a {
+    transform: rotate(-90deg);
+    color: var(--colorBlack);
+    transition: all linear .3s;
+}
+.socials-links ul li a:hover {
+    color: red;
+}
+/* =========================
+       Home2 Banner End 
+========================== */
+
+/* =========================
+       Home2 Process Start
+ ========================== */
+ .home2-process-section-area {
+    padding-bottom: 80px;
+    padding-top: 120px;
+    background: #000;
+ }
+.process-heading {}
+.process-heading h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:700 ;
+    color: red;
+    position: relative;
+    padding-left: 110px;
+    margin-bottom: 20px;
+}
+.process-heading h5::after {
+    position: absolute;
+    content: "";
+    background: red;
+    width: 100px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+}
+.process-heading h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: var(--colorPrimary);
+
+}
+.process-content {
+}
+.process-image {
+    overflow: hidden;
+}
+
+.process-image img {
+    width: 100%;
+    object-fit: cover;
+    transition: all linear .3s;
+    transform: scale(1);
+}
+.process-content:hover .process-image img{
+    transform: scale(1.1);
+}
+.process-content-text h4 {
+    color: var(--colorPrimary);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.process-content-text p {
+    margin-bottom: 0;
+}
+ /* =========================
+     Home2 Process  END
+========================== */
+/* =========================
+     Future-ara Start
+========================== */
+.future-area {
+    background: #F5F5F6;
+    padding: 120px 0;
+}
+.future-content {}
+.future-image {
+    padding: 40px 40px 50px 28px;
+    background-size: cover !important;
+}
+.future-image h4 {
+    color: var(--colorPrimary);
+}
+.future-icon-area {
+    background: var(--colorPrimary);
+    padding: 20px 20px;
+    gap: 20px;
+}
+.future-icon-image {
+    position: relative;
+    margin-top: -45px;
+    background: var(--colorPrimary);
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+}
+.future-icon-image img {
+    object-fit: cover;
+    width: 100%;
+    transition: all linear .3s;
+}
+.future-icon-area:hover .future-icon-image img {
+    animation: bounceIn 0.8s;
+}
+@keyframes bounceIn {
+	0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+	40% {
+        transform: translateY(-5px);
+        filter: blur(0.5px);
+    }
+	60% {
+        transform: translateY(-5px);
+        filter: blur(0.5px);
+    }
+}
+/* =========================
+        Future-ara End
+========================== */
+
+/* ==========================
+     Home-2 About-Us Start
+========================== */
+.about-image-text {
+    background: red;
+    padding: 15px 30px;
+}
+.about-image-text .counter {
+    color: var(--colorPrimary);
+    font-size: 34px;
+    font-weight: 700;
+}
+.about-image-text span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--colorPrimary);
+}
+
+.about-small-image.home-2 img {
+    width: 320px!important;
+    height: 310px;
+    
+}
+
+/* ==========================
+    Home-2 About-Us End
+========================== */
+/* =========================
+     Skill-area Start
+========================== */
+.skill-area {
+    background: #1A1A1A;
+    position: relative;
+    z-index: 1;
+    padding: 120px 0;
+}
+.skill-content {}
+.skill-content h5 {
+    color: red;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.skill-content h2 {
+    color: var(--colorPrimary);
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.skill-item {
+    padding: 55px 40px;
+    background: #212121;
+}
+.skill-item-image {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 45px;
+}
+.skill-item-image::after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 70px;
+    top: 10px;
+    left: 15px;
+    background: #d9d9d91a;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all linear .3s;
+}
+.skill-item:hover .skill-item-image::after {
+    top: -11px;
+    left: -8px;
+}
+.skill-item-image img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+.skill-item span {
+    font-size: 48px;
+    font-weight: 700;
+    color: red;
+}
+.skill-item h5 {
+    color: var(--colorPrimary);
+}
+.skill-image {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 50%;
+    height: 100%;
+    right: -140px;
+}
+.skill-image img {
+    object-fit: cover;
+}
+/* =========================
+     Skill-area End
+========================== */
+/* =========================
+Home-2 Team Member Start
+========================== */
+.home-2.team-member-area {
+    background: #F5F5F6;
+    padding: 120px 0;
+}
+.home-2.team-member-heading {
+    text-align: center;
+}
+.home-2.team-member-heading h5 {
+    position: relative;
+    margin-left: 0;
+}
+.home-2.team-member-heading h5::after {
+    left: 585px;
+}
+.home-2.team-member-heading h5::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100px;
+    background: red;
+    top: 50%;
+    right: 470px;
+}
+.home-2.team-member-heading h3 {
+    color: var(--colorBlack);
+}
+/* =========================
+Home-2 Team Member End
+========================== */
+/* =========================
+     Home-2 Project Start
+========================== */
+.home-2.project-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+.home-2.project-item {
+    position: relative;
+    margin: 12px;
+}
+.home-2-project-content {
+    position: absolute;
+    content: "";
+    width: 90%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding:  60px;
+    bottom: 10%;
+    z-index: 1;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.home-2.project-item:hover .home-2-project-content {
+    opacity: 1;
+}
+.home-2-project-content::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(90deg, #7e230ead 58.77%, rgba(0, 0, 0, 0.00) 100%);
+    width: 0%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: all linear .3s;
+
+}
+.project-item:hover .home-2-project-content:after {
+    width: 100%;
+} 
+.home-2-project-box1 {
+  position: absolute;
+  content: "";
+  background: red;
+  width: 100px;
+  height: 0px;
+  bottom: 167px;
+  right: -43px;
+  transition: all linear .3s;
+  z-index: 9999;
+}
+.home-2.project-item:hover .home-2-project-box1 {
+    height: 100px;
+}
+.home-2-project-box2 {
+    position: absolute;
+    content: "";
+    background:var(--colorPrimary);
+    width: 100px;
+    height: 0px;
+    top: 10px;
+    right: 55px;
+    transition: all linear .3s;
+} 
+.home-2.project-item:hover .home-2-project-box2 {
+    height: 100px;
+}
+.home-2-project-content a {
+    color: var(--colorPrimary);
+    font-size:22px;
+    font-weight: 700;
+}
+.home-2-project-content a:hover {
+    color: red;
+}
+.home-2-project-content ul li a {
+    color: red;
+    font-size: 16px;
+    font-weight: 500;
+}
+.home-2-project-content ul li a:hover {
+    color: var(--colorPrimary);
+}
+/* =========================
+     Home-2 Project End
+========================== */
+/* =========================
+        Brand Start
+========================== */
+.brand-area {
+    background: #f6f6f6;
+    padding: 120px 0;
+}
+
+.brand-heading {
+    margin-bottom: 50px;
+}
+.brand-heading h5 {
+    color: red;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 110px;
+    margin-bottom: 20px;
+}
+.brand-heading h5::after {
+    position: absolute;
+    content: "";
+    background: red;
+    width: 100px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+}
+
+.brand-content {
+    background: var(--colorPrimary);
+}
+.brand-item {
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #74787C;
+  
+}
+.brand-image {
+    padding: 25px;
+}
+.brand-image img {
+    object-fit: cover;
+    width: 100%;
+    filter: blur(0.6px);
+}
+.brand-client-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-client-image::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, var(--primary-color) 28.13%, rgba(232, 99, 68, 0.00) 100%);
+    transition: all linear 0.3s;
+    top: 0;
+    left: 0;
+    background: red;
+    opacity: 0.4;
+}
+
+.brand-content:hover .brand-client-image::before {
+    opacity: 0; 
+    left: -100px;
+}
+
+.brand-client-image img {
+    width: 100%;
+    object-fit: cover;
+}
+.client-text {
+    padding:25px ;
+}
+.client-text p {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: red;
+}
+.client-text h6 {
+    font-size: 20px;
+    font-weight: 700;
+}
+/* =========================
+Brand End
+========================== */
+
+/* =========================
+       Appointment Start
+========================== */
+.appointment-area {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center;
+    padding: 120px 0;
+}
+.appointment-content {
+    justify-content: space-between;
+}
+.appointment-text p {
+    margin-bottom: 40px;
+    color: var(--colorPrimary);
+    width: 450px;
+    line-height: 34px;
+}
+.appointment.menu-right {
+    padding: 0;
+    width: 165px;
+}
+.appointment-contact-number a {
+    font-size: 90px;
+    font-weight: 600;
+    color: var(--colorPrimary);
+}
+/* =========================
+     Appointment End
+========================== */
+
+/* =========================
+     Appointment Form Start
+==========================  */
+.appointment-form-area {
+    background: #f6f6f6;;
+    padding: 120px 0;
+}
+.appointment-form-title {
+    background: var(--colorPrimary);
+    padding: 55px;
+}
+.appointment-form-title h5 {
+    color: red;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 110px;
+    margin-bottom: 20px;
+}
+.appointment-form-title h5::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: red;
+    top: 50%;
+    left: 0;
+}
+.appointment-form-title h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+input:focus,select:focus,textarea:focus {
+    box-shadow: none !important;
+    outline: 0;
+}
+.appointment-form-title form {}
+.form-control.style {
+    background: #f6f6f6;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 15px 30px;
+    color: var(--colorBlack);
+    width: 100%;
+    outline: 0;
+    
+}
+
+.form-group .form-select {
+    margin-bottom: 20px;
+    color: #8f9193;
+    box-shadow: none !important;
+    outline: 0;
+    border: 0;
+    background: #f6f6f6;
+}
+
+.form-discuss {
+    margin-left: 35px;
+    padding: 55px 0 0 0;
+}
+
+.discuss-title {}
+
+.discuss-title h5 {
+    color: red;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 110px;
+    margin-bottom: 20px;
+}
+.discuss-title h5::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: red;
+    top: 50%;
+    left: 0;
+}
+.discuss-title h2 {
+    margin-bottom: 30px;
+}
+.discuss-title p {
+    margin-bottom: 40px;
+}
+.discuss-content {
+    gap: 65px;
+}
+.discuss-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discuss-content-text h3 {
+    font-size: 22px;
+}
+.discuss-content-text p {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.text-box {
+    left: 15px;
+}
+.text-box span {
+    font-size: 100px;
+    font-weight: 700;
+    color: var(--colorPrimary);
+    text-shadow: 0px 14px 25px rgba(0, 0, 0, 0.05);
+    opacity: 1;
+    animation: loading-text 2s infinite ease-in-out;
+    display: inline-block;
+}
+.text-box span:nth-child(1) {
+    animation-delay: 0.9s;
+}
+.text-box span:nth-child(2) {
+    animation-delay: 1s;
+}
+.text-box span:nth-child(3) {
+    animation-delay: 1.1s;
+}
+.text-box span:nth-child(4) {
+    animation-delay: 1.2s;
+}
+.text-box span:nth-child(5) {
+    animation-delay: 1.3s;
+}
+.text-box span:nth-child(6) {
+    animation-delay: 1.4s;
+}
+.text-box span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+.text-box span:nth-child(8) {
+    animation-delay: 1.6s;
+}
+.text-box span:nth-child(9) {
+    animation-delay: 1.7s;
+}
+
+@keyframes loading-text {
+    0% {
+    transform: translateY(0%);
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(-5%);
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* =========================
+     Appointment Form End
+==========================  */
+
+/* =========================
+Home two Blog Start
+========================== */
+.home-two-blog-area {
+    background: #f6f6f6;
+    padding: 0px 0px 120px 0;
+}
+.project-button.blog {
+    margin-top: 0;
+}
+.home-two-title h5 {
+    color: red;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 110px;
+    margin-bottom: 20px;
+}
+.home-two-title h5::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: red;
+    top: 50%;
+    left: 0;
+}
+.home-two-title h2 {
+    margin-bottom: 30px;
+}
+.home-two-title p {
+    margin-bottom: 40px;
+    width: 400px;
+}
+.project-button.blog a {
+    color: var(--colorBlack);
+}
+.home-two.blog-deatils {
+    padding: 20px 30px;
+    background: var(--colorPrimary);
+}
+.home-two.blog-deatils > a {
+    color:var(--colorBlack) ;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all linear .3s;
+}
+.home-two.blog-deatils > a:hover {
+    color: red;
+}
+/* =========================
+      Home Two  Blog End
+========================== */
+/* ========================
+Home-Three Top Menu Start
+=========================== */
+.home-three.header-area {
+    background: #1A1A1A;
+}
+.home-three .circle {
+    border-right: 1px solid #2c2c2c;
+}
+.home-three.circle-box {
+    border: 1px solid #FFFFFF1A;
+}
+.home-three.circle-box .line1, .home-three.circle-box .line2, .home-three.circle-box .line3, .home-three.circle-box .line4 {
+    background: #fff;
+}
+.home-three .logo {
+    background: transparent;
+    border-right: 1px solid #2c2c2c;
+    width: 250px;
+}
+.home-three .header-top-left ul li i, .home-three .header-top-left ul li span {
+    color: var(--colorPrimary);
+}
+.home-three .header-top-left ul li a {
+    color: var(--colorPrimary);
+    transition: all linear .3s;
+}
+.home-three .header-top-left ul li a:hover {
+    color: red;
+}
+.home-three .header_top_right ul li a {
+    color: var(--colorPrimary);
+}
+.home-three .main-menu ul li > a {
+    color: var(--colorPrimary);
+    transition: all linear .3s;
+}
+.home-three .main-menu ul li .submenu li a {
+    color: var(--colorBlack);
+    transition: all linear .3s;
+}
+
+/* ========================
+    Home-three Top Menu End
+=========================== */
+/* =========================
+ Home-Three BANNER START
+========================== */
+.home-three .hero-area {}
+.home-three .hero-text {}
+.home-three .hero-text h5 {}
+.home-three .hero-text h2 {}
+.home-three .hero-text span {}
+.home-three .hero-text a {}
+/* =========================
+ Home-three BANNER END
 ========================== */

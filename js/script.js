@@ -35,3 +35,42 @@ $('.hero-slider').slick({
       }
   ]
 });
+/*==========
+    Home-2
+===========*/
+$('.project-slider').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 2,
+    margin: 20 ,
+    dots: false,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            },
+            breakpoint: 1140,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 776,
+            settings: {
+                centerMode: false,
+                slidesToShow: 1
+            }
+        },
+
+    ]
+});
+
+;
